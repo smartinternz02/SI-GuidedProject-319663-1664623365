@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Hospital Readmission Prediction</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="../static/css/mainstyle.css" rel="stylesheet" type="text/css">
+
+
+</head>
+<body>
+  <div class="nav">
+    <a href="/">Home</a>
+    <a href="/pred">Prediction</a>
+</div>
+
+
+
+<div class="row">
+
+  <div class="main2">
+    
+    <form  action = "/out" method = "post" >
+    <p>
+        Discharge description
+        <select name= "discharge_disposition_id">
+        <option> Select option </option>
+        <option value = 1> Discharged to home </option>
+        <option value = 2> Discharged to another facility for inpatient care </option>
+        <option value = 10> Discharged to another facility for outpatient services </option>
+        <option value = 18> Unknown </option>
+        </select>
+        </p>
+        <p>
+        Admission description
+            <select name= "admission_source_id">
+            <option> Select option </option>
+            <option value = 1> Referral </option>
+            <option value = 4> Transfer </option>
+            <option value = 9> Unknown </option>
+            <option value = 11> Just born </option>
+            </select>
+            </p>
+        
+
+            <!-- <label for="appointment_message" class="text-black">Message</label> -->
+            <p> Time in Hospital 
+           <input class="form1" type = "number" name= "time_in_hospital"/> </p>
+
+
+            <!-- <label for="appointment_message" class="text-black">Message</label> -->
+            <p> Number of Medications 
+             <input  class="form1"  type = "number" name= "num_medications"/> </p>
+          
+
+            <!-- <label for="appointment_message" class="text-black">Message</label> -->
+            <p> Number of emergencies 
+             <input  class="form1"  type = "number" name= "number_emergency"/> </p>
+
+            <!-- <label for="appointment_message" class="text-black">Message</label> -->
+            <p> Number of inpatient visits 
+            <input  class="form1" type = "number" name= "number_inpatient"/> </p>
+
+            <p>
+                Primary Diagnosis
+                <select name= "diag_1">
+                <option> Select option </option>
+                <option value = "circulatory"> Circulatory </option>
+                <option value = "digestive"> Digestive </option>
+                <option value = "genitourinary"> Genitourinary </option>
+                <option value = "diabetes"> Diabetes </option>
+                <option value = "injury"> Injury </option>
+                <option value = "musculoskeletal"> Musculoskeletal </option>
+                <option value = "neoplasms"> Neoplasms </option>
+                <option value = "respiratory"> Respiratory </option>
+                <option value = "other"> Other </option>
+                </select>
+                </p>
+
+
+                <p>
+                   Secondary Diagnosis
+                    <select name= "diag_2">
+                    <option> Select option </option>
+                    <option value = "circulatory"> Circulatory </option>
+                    <option value = "digestive"> Digestive </option>
+                    <option value = "genitourinary"> Genitourinary </option>
+                    <option value = "diabetes"> Diabetes </option>
+                    <option value = "injury"> Injury </option>
+                    <option value = "musculoskeletal"> Musculoskeletal </option>
+                    <option value = "neoplasms"> Neoplasms </option>
+                    <option value = "respiratory"> Respiratory </option>
+                    <option value = "other"> Other </option>
+                    </select>
+                    </p>
+
+
+
+                    <p>
+                        Glucose serum test result
+                        <select name= "max_glu_serum">
+                        <option> Select option </option>
+                        <option value = "None"> Not measured </option>
+                        <option value = "Norm"> Normal </option>
+                        <option value = ">200"> Greater than 200 </option>
+                        <option value = ">300"> Greater than 300 </option>
+                        </select>
+                    </p>
+
+
+
+                    <p>
+                        Glimepiride dosage
+              <select name= "glimepiride">
+              <option> Select option </option>
+              <option value = "Up"> Dosage increased </option>
+              <option value = "Down"> Dosage decreased </option>
+              <option value = "Steady"> Dosage did not change </option>
+              <option value = "No"> Dosage not prescribed </option>
+              </select>
+              </p>
+
+
+              <p>
+                Diabetes medication prescribed?
+                <select name= "diabetesMed">
+                <option> Select Yes or No </option>
+                <option value = "Yes"> Yes </option>
+                <option value = "No"> No </option>
+                </select>
+                </p>
+
+                <input type="submit" class="btna" name="s" value="Predict"><br><br>
+
+            </form>
+
+            <a href="/"><button class="btnb">Home</button></a>
+                
+    </div>
+</div>
+
+<footer class="footer">
+  <h1>Developed by Pranav&copy;</h1>
+</footer>
+</body>
+</html>

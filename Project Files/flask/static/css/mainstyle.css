@@ -1,0 +1,266 @@
+*
+{
+    box-sizing: border-box;
+}
+ body
+ {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: white;
+ }
+
+ .nav
+ {
+     background-color:black;
+     color: white;
+     width: 100%;
+     padding: 20px 20px;
+ }
+
+.nav a
+{
+    box-sizing: content-box;
+    text-decoration: none;
+    color: white;
+    padding: 20px 50px;
+    font-size: 40px;
+}
+
+.nav a:hover
+{
+    background-color: white;
+    color: brown;
+    cursor: pointer;
+}
+
+.header
+{
+    padding: 80px 20px;
+    background-color: brown;
+}
+
+.header h1
+{
+    font-size: 80px;
+    text-align: center;
+    color: white;
+}
+
+.header h2
+{
+    font-size: 40px;
+    text-align: center;
+    color:lightgray;
+}
+
+
+/* Column container */
+.row {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+  }
+  
+  
+  /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 700px) {
+    .row {   
+      flex-direction: column;
+    }
+  }
+
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .column {
+    width: 100%;
+    padding: 0 1em 1em 1em;
+    text-align: center;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    padding: 2em 1.5em;
+    background: linear-gradient(#ffffff 50%, brown 50%);
+    background-size: 100% 200%;
+    background-position: 0 2.5%;
+    border-radius: 5px;
+    box-shadow: 0 0 35px rgba(0, 0, 0, 0.12);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  .card h3 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #1f194c;
+    margin: 1em 0;
+  }
+  .card p {
+    color: darkslategray;
+    font-size: 15px;
+    line-height: 1.6;
+    letter-spacing: 0.03em;
+  }
+  .icon-wrapper {
+    background-color: brown;
+    position: relative;
+    margin: auto;
+    font-size: 30px;
+    height: 2.5em;
+    width: 2.5em;
+    color: #ffffff;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    transition: 0.5s;
+  }
+  .card:hover {
+    background-position: 0 100%;
+  }
+  .card:hover .icon-wrapper {
+    background-color: #ffffff;
+    color: #2c7bfe;
+  }
+  .card:hover h3 {
+    color: #ffffff;
+  }
+  .card:hover p {
+    color: #f0f0f0;
+  }
+  @media screen and (min-width: 768px) {
+    section {
+      padding: 0 2em;
+    }
+    .column {
+      flex: 0 50%;
+      max-width: 50%;
+    }
+  }
+  @media screen and (min-width: 992px) {
+    section {
+      padding: 1em 3em;
+    }
+    .column {
+      flex: 0 0 33.33%;
+      max-width: 33.33%;
+    }
+  }
+
+  .footer
+  {
+      background-color: black;
+      color: white;
+      width: 100%;
+      padding:5px 0px;
+  }
+  .footer h1
+  {
+      font-size: 13px;
+      text-align: center;
+  }
+
+  
+
+  
+
+
+
+.main2 {   
+  -ms-flex: 70%; /* IE10 */
+  flex: 70%;
+  background-color: white;
+  padding: 100px;
+  line-height: 35px;
+  color: darkslategray;
+  font-size: 30px;
+}
+
+
+.main2 select
+{
+  position: relative;
+  font-family: Arial;
+  width: 100%;
+  height: 35px;
+  background-color: brown;
+  color: aliceblue;
+  font-size: 20px;
+}
+
+.main2 select:hover
+{
+  cursor: pointer;
+}
+.main2 option
+{
+  background-color: white;
+  color: darkslategray;
+}
+
+.form1
+{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  color: darkslategray;
+  font-weight: bold;
+  font-size: 20px;
+}
+.form1:hover
+{
+  background-color: brown;
+  color: white;
+}
+
+.btna
+{
+    background-color: brown;
+    color: white;
+    border: 1px solid brown;
+    padding: 20px 30px;
+    border-radius: 300px;
+    width: 100%;
+    font-size: 40px;
+}
+
+.btnb
+{
+    background-color: brown;
+    color: white;
+    border: 1px solid brown;
+    padding: 20px 30px;
+    border-radius: 300px;
+    width: 10%;
+    margin-left: 45%;
+    font-size: 26px;
+}
+
+.btna:hover
+{
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+    cursor: pointer;
+}
+
+.btnb:hover
+{
+    background-color: white;
+    color: brown;
+    border: 1px solid brown;
+    cursor: pointer;
+}
+.row3
+{
+    text-align: center;
+    font-size: 50px;
+}
+.row3
+{
+    margin-top: 0%;
+    color: brown;
+}
